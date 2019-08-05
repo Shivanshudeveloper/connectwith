@@ -1,0 +1,178 @@
+<% include ./includes/usernavigation.inc.ejs %>
+<style>
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.avatar2 {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+</style>
+<% include ./includes/dashboard-navigation.inc.ejs %>
+<div class="row mt-2 mr-1 ml-1 mb-2">
+    <% include ./includes/user-profile.inc.ejs %>
+    <div class="col">
+        <div class="card card-body">
+            <h4>
+                Information
+            </h4>
+            <form action="launchproject" method="POST"> 
+                <% include ./partials/messages %>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="projectName">
+                                <i class="fas text-dark fa-file-signature"></i>
+                                Project Name
+                            </label>
+                            <input type="text" class="form-control" name="projectName" id="projectName">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="projectName">
+                                <i class="fas text-info fa-user-shield"></i>
+                                Project Owner
+                            </label>
+                            <input type="text" class="form-control" name="projectOwner" id="projectOwner">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="projectName">
+                                <i class="fas text-warning fa-box-open"></i>
+                                Project Category
+                            </label>
+                            <select name="categoryProject" id="categoryProject" class="form-control">
+                                <option selected>Choose...</option>
+                                <option value="Architecture">Architecture</option>
+                                <option value="Interior Design">Interior Design</option>
+                                <option value="Commerce">Commerce</option>
+                                <option value="Accounts">Accounts</option>
+                                <option value="Chartered Accountancy">Chartered Accountancy</option>
+                                <option value="Design">Design</option>
+                                <option value="Animation">Animation</option>
+                                <option value="Fashion Design">Fashion Design</option>
+                                <option value="Graphic Design">Graphic Design</option>
+                                <option value="Merchandise Design">Merchandise Design</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="Aerospace Engineering">Aerospace Engineering</option>
+                                <option value="Biotechnology Engineering">Biotechnology Engineering</option>
+                                <option value="Chemical Engineering">Chemical Engineering</option>
+                                <option value="Civil Engineering">Civil Engineering</option>
+                                <option value="Computer Vision">Computer Vision</option>
+                                <option value="Electrical Engineering">Electrical Engineering</option>
+                                <option value="Electronics Engineering">Electronics Engineering</option>
+                                <option value="Energy Science &amp; Engineering">Energy Science &amp; Engineering</option>
+                                <option value="Engineering Design">Engineering Design</option>
+                                <option value="Engineering Physics">Engineering Physics</option>
+                                <option value="Game Development">Game Development</option>
+                                <option value="Material Science">Material Science</option>
+                                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                <option value="Metallurgical Engineering">Metallurgical Engineering</option>
+                                <option value="Mobile App Development">Mobile App Development</option>
+                                <option value="Naval Architecture and Ocean Engineeering">Naval Architecture and Ocean Engineeering</option>
+                                <option value="Network Engineering">Network Engineering</option>
+                                <option value="Petroleum Engineering">Petroleum Engineering</option>
+                                <option value="Programming">Programming</option>
+                                <option value="Software Development">Software Development</option>
+                                <option value="Software Testing">Software Testing</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Hospitality">Hospitality</option>
+                                <option value="Hotel Management">Hotel Management</option>
+                                <option value="Travel &amp; Tourism">Travel &amp; Tourism</option>
+                                <option value="Data Entry">Data Entry</option>
+                                <option value="Hospitality">Hospitality</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Finance">Finance</option>
+                                <option value="General Management">General Management</option>
+                                <option value="Human Resources (HR)">Human Resources (HR)</option>
+                                <option value="Market/Business Research">Market/Business Research</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Operations">Operations</option>
+                                <option value="Sales">Sales</option>
+                                <option value="Media">Media</option>
+                                <option value="Cinematography">Cinematography</option>
+                                <option value="Content Writing">Content Writing</option>
+                                <option value="Film Making">Film Making</option>
+                                <option value="Journalism">Journalism</option>
+                                <option value="Motion Graphics">Motion Graphics</option>
+                                <option value="Photography">Photography</option>
+                                <option value="Public Relations (PR)">Public Relations (PR)</option>
+                                <option value="Social Media Marketing">Social Media Marketing</option>
+                                <option value="Video Making/Editing">Video Making/Editing</option>
+                                <option value="Videography">Videography</option>
+                                <option value="Science">Science</option>
+                                <option value="Biology">Biology</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Statistics">Statistics</option>
+                                <option value="Agriculture &amp; Food Engineering">Agriculture &amp; Food Engineering</option>
+                                <option value="Campus Ambassador">Campus Ambassador</option>
+                                <option value="Company Secretary (CS)">Company Secretary (CS)</option>
+                                <option value="Data Science">Data Science</option>
+                                <option value="Event Management">Event Management</option>
+                                <option value="Humanities">Humanities</option>
+                                <option value="Law">Law</option>
+                                <option value="Medicine">Medicine</option>
+                                <option value="Pharmaceutical">Pharmaceutical</option>
+                                <option value="Teaching">Teaching</option>
+                                <option value="UI/UX Design">UI/UX Design</option>
+                                <option value="Volunteering">Volunteering</option>
+                                <option value="Machine Learning">Machine Learning</option>
+                                <option value="Artifitual Intelligence">Artifitual Intelligence</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="projectName">
+                                <i class="fas text-danger fa-cube"></i>
+                                Key Points
+                            </label>
+                            <input type="text" class="form-control" name="keyPoints" id="keyPoints">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Visibility">
+                        <i class="fas text-info fa-eye"></i>    
+                        Visibility
+                    </label>
+                    <select name="visibility" id="visibility" class="form-control">
+                        <option value="Public" selected>Public</option>
+                        <option value="Private">Private</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="repositoryLink">
+                        <i class="fab text-secondary fa-github"></i>
+                        Any repository link? 
+                    </label>
+                    <small class="form-text float-right text-muted">Opstional</small>
+                    <input type="text" class="form-control" name="repository" id="repository">
+                </div>
+                <div class="form-group">
+                    <label for="description">
+                        <i class="fas text-dark fa-question-circle"></i>
+                        Tell Something About Project ?
+                    </label>
+                    <textarea name="description" class="form-control" id="description" cols="30" rows="5" required></textarea>
+                </div>
+                <button class="btn btn-primary btn-block" id="initiateProject">
+                    Launch Project
+                    <i class="fas fa-check-circle"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<% include ./includes/usernavigation.inc.ejs %>
+<style>
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.avatar2 {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+</style>
+<% include ./includes/dashboard-navigation.inc.ejs %>
+<div class="row mt-2 mr-1 ml-1 mb-2">
+    <% include ./includes/user-profile.inc.ejs %>
+    <div class="col">
+        <div class="card card-body">
+          <div class="card card-body">
+            <p class="text-center h3">No Message Yet!</p>
+            <img src="https://media1.giphy.com/media/eonIj5bw871io/source.gif" class="img-fluid w-75" alt="No Message" srcset="">
+          </div>
+
+          <form class="form-group mt-2">
+            <textarea name="message" id="message" class="form-control" cols="10" rows="2"></textarea>
+            <button type="submit" class="btn mt-2 btn-primary btn-block btn-sm">
+              Send Message
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+    </div>
+</div>

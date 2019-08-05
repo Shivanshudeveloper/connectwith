@@ -1,0 +1,56 @@
+<% include ./includes/usernavigation.inc.ejs %>
+<style>
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.avatar2 {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+</style>
+<% include ./includes/dashboard-navigation.inc.ejs %>
+<div class="row mt-2 mr-1 ml-1 mb-2">
+    <% include ./includes/user-profile.inc.ejs %>
+    <div class="col">
+        <div class="card card-body">
+          <div class="row text-center">
+            <div class="col">
+                <a onclick="he();" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="60" height="60"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M43,57.33333c-9.8951,0 -17.91667,8.02156 -17.91667,17.91667c0,9.8951 8.02156,17.91667 17.91667,17.91667c9.8951,0 17.91667,-8.02156 17.91667,-17.91667c0,-9.8951 -8.02156,-17.91667 -17.91667,-17.91667z" fill="#ffa726"></path><path d="M7.16667,124.34167c0,0 10.03333,-22.575 35.83333,-22.575c25.8,0 35.83333,22.575 35.83333,22.575v11.825h-71.66667zM164.83333,124.34167c0,0 -10.03333,-22.575 -35.83333,-22.575c-25.8,0 -35.83333,22.575 -35.83333,22.575v11.825h71.66667z" fill="#455a64"></path><path d="M86,39.41667c-11.87412,0 -21.5,9.62588 -21.5,21.5c0,11.87412 9.62588,21.5 21.5,21.5c11.87412,0 21.5,-9.62588 21.5,-21.5c0,-11.87412 -9.62588,-21.5 -21.5,-21.5z" fill="#ffb74d"></path><path d="M129,122.19167c0,0 -11.825,-26.875 -43,-26.875c-31.175,0 -43,26.875 -43,26.875v13.975h86z" fill="#607d8b"></path><path d="M129,57.33333c-9.8951,0 -17.91667,8.02156 -17.91667,17.91667c0,9.8951 8.02156,17.91667 17.91667,17.91667c9.8951,0 17.91667,-8.02156 17.91667,-17.91667c0,-9.8951 -8.02156,-17.91667 -17.91667,-17.91667z" fill="#ffa726"></path><g fill="#ffa726"><path d="M43,57.33333c-9.8951,0 -17.91667,8.02156 -17.91667,17.91667c0,9.8951 8.02156,17.91667 17.91667,17.91667c9.8951,0 17.91667,-8.02156 17.91667,-17.91667c0,-9.8951 -8.02156,-17.91667 -17.91667,-17.91667zM129,57.33333c-9.8951,0 -17.91667,8.02156 -17.91667,17.91667c0,9.8951 8.02156,17.91667 17.91667,17.91667c9.8951,0 17.91667,-8.02156 17.91667,-17.91667c0,-9.8951 -8.02156,-17.91667 -17.91667,-17.91667z"></path></g></g></g></svg>
+                <br>        
+                    Launch Campaign
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="60" height="60"
+                    viewBox="0 0 172 172"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#34495e"><path d="M154.8,13.76h-137.6c-1.892,0 -3.44,1.548 -3.44,3.44v137.6c0,1.892 1.548,3.44 3.44,3.44h137.6c1.892,0 3.44,-1.548 3.44,-3.44v-137.6c0,-1.892 -1.548,-3.44 -3.44,-3.44zM72.24,41.28h61.92v20.64h-61.92zM72.24,82.56h61.92v20.64h-61.92zM61.92,96.32h-27.52v-6.88h27.52zM61.92,55.04h-27.52v-6.88h27.52zM86,137.6h-13.76v-13.76h13.76zM137.6,134.16h-41.28v-6.88h41.28z"></path></g></g></svg>
+                <br>        
+                    Launch Form
+                </a>
+            </div>
+              
+            <div class="col">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="60" height="60"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M68.08333,100.33333h-21.5v-64.36025v-10.86825l3.58333,-3.58333h14.33333l3.58333,3.58333v10.86825z" fill="#ef6c00"></path><path d="M28.66667,125.41667h114.66667v17.91667h-114.66667zM28.66667,100.33333h114.66667v17.91667h-114.66667z" fill="#ffe0b2"></path><path d="M145.125,78.83333v0c2.967,0 5.375,2.408 5.375,5.375v59.125h-10.75v-59.125c0,-2.967 2.408,-5.375 5.375,-5.375zM26.875,78.83333v0c2.967,0 5.375,2.408 5.375,5.375v59.125h-10.75v-59.125c0,-2.967 2.408,-5.375 5.375,-5.375z" fill="#ffcc80"></path><path d="M28.66667,118.25h114.66667v7.16667h-114.66667z" fill="#ffcc80"></path><path d="M86,53.75h-50.16667c-3.95958,0 -7.16667,-3.20708 -7.16667,-7.16667v-10.7285c0,-3.95958 3.20708,-7.16667 7.16667,-7.16667h38.49933c0.78833,0 1.55517,0.258 2.17867,0.73817l11.66733,8.93683c0.88508,0.67725 1.40467,1.73075 1.40467,2.84517v8.95833c0,1.978 -1.60533,3.58333 -3.58333,3.58333z" fill="#757575"></path><path d="M125.41667,68.08333c0,0 17.91667,-7.16667 17.91667,-21.5c0,-10.75 -10.75,-21.5 -14.33333,-21.5v21.5c0,0 -3.58333,3.58333 -8.95833,3.58333c-5.375,0 -8.95833,-3.58333 -8.95833,-3.58333v-21.5c-3.58333,0 -14.33333,10.75 -14.33333,21.5c0,14.33333 17.91667,21.5 17.91667,21.5l-3.58333,32.25h8.95833h8.95833z" fill="#78909c"></path></g></g></svg>
+                    <br>        
+                        Workshops
+                    </a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
