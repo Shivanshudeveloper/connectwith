@@ -18,10 +18,20 @@
     <% include ./includes/user-profile.inc.ejs %>
     <div class="col">
         <div class="card card-body">
-            <a href="/initiativeproject" class="btn btn-block btn-primary" id="initiativeProject">
-                <i class="fas fa-rocket"></i>
-                Initiate Project
-            </a>
+            <div class="row">
+                <div class="col">
+                    <a href="/initiativeproject" class="btn btn-block btn-primary" id="initiativeProject">
+                        <i class="fas fa-rocket"></i>
+                        Initiate Project
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="btn btn-block btn-warning" id="initiativeProject">
+                        <i class="fas fa-scroll"></i>
+                        Launch Your Publication
+                    </a>
+                </div>
+            </div>
             <% include ./partials/messages.ejs %>
             
             <% project.forEach(function(project) { %>

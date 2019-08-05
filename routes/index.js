@@ -36,7 +36,7 @@ router.get('/dashboard',ensureAuthenticated, (req, res) => {
             Project.find( {} )
                 .then(project => {
                     if (isEmptyObject(project)) {
-                        noProject.push({ msg: 'No Projects Yet!' });
+                        noProject.push({ msg: 'Nothing Yet!' });
                         res.render('dashboard', {
                             user: user,
                             project: project,
